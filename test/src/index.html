@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Test</title>
+	<meta name="description" content="Test">
+	<meta name="author" content="test">
+
+	<link rel="stylesheet" href="./styles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="display-3">dogCEO</h1>
+		<p class="display-2">A simple tool to generate new pictures of dogs. <br> Search for new pictures to add them to your collection.</p>
+	</div>
+	<form>
+		<div class="form-group">
+			<input type="new-dog" class="form-control" id="generateNewDog" aria-describedby="newDog" placeholder="Enter dog name">
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+	<div class="wrapper">
+		<button type="button" id="btn">Get a Random Dog!</button>
+	</div>
+
+	<div class="card">
+		<div id="image"></div>
+	</div>
+
+	<script src="src/main.js"></script>
+</body>
+</html>
