@@ -12,6 +12,11 @@ btn.addEventListener("click", function () {
 });
 
 function newHTML(data) {
-	var htmlString = "this is a test";
+	var htmlString = "";
+
+	for (i = 0; i < data.length; i++) {
+		htmlString += "<img>" + data[i].message + "</img";
+	}
+
 	dogContainer.insertAdjacentHTML('beforeend', htmlString);
 }
